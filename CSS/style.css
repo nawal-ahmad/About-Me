@@ -1,0 +1,56 @@
+*{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  margin: 0;
+}
+
+header{
+  background-color: #276678;
+  color:#f6f5f5 ;
+  height: 150px;
+}
+header h1 {
+  float: left;
+  width: 30%;
+  font-size: 50px;
+  padding-top: 10px;
+  padding-left: 50px;
+}
+
+header nav{
+  float: right;
+  width: 60%;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding-left: 25px;
+  padding-top: 45px;
+}
+
+header nav ul a:hover {
+  background-color:#1687a7 ;
+}
+
+header nav ul li a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: larger;
+  color: #f6f6f6;
+}
+
+section{
+  padding: 30px;
+  font-size: larger;
+}
+footer{
+  height: 100px;
+  background-color:#276678;
+  color: #f6f6f6;
+}
+
+footer p{
+  text-align: center;
+  font-size: 30px;
+  vertical-align: middle;
+  line-height: 100px;
+} 
