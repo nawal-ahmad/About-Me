@@ -2,46 +2,51 @@
 
 let userName= prompt('What is your name?');
 
-let userAge= prompt('Are you over 18 years old?', 'yes,y,no,n');
-userAge = userAge.toLowerCase();
-if (userAge ==='yes'||userAge==='y'){ 
-  'Welcome '+ userName
+let specialty= prompt('Do you know what is my specialty?','yes,no');
+specialty = specialty.toLowerCase();
+if(specialty==='yes'){
+  alert ('Good!');
+  console.log(specialty+' You know what is my specialty');
+
 }
 else {
-  alert ('Sorry but you shoud be over than 18!')
+  alert ('I\'m biomedical engineer!');
+  console.log(specialty+' You don\'t know what is my specialty');
 }
 
-let mature= prompt('Are you responsible for yourself?','yes,y,no,n');
-mature = mature.toLowerCase();
-if(mature==='yes'||mature==='y'){
-  alert ('Wow impressive!');
+let careerShift= prompt('Do you find the idea of making career shift from engineer to soft developer exciting?','yes,no');
+careerShift = careerShift.toLowerCase();
+if(careerShift==='yes'){
+  alert ('I think so!');
+}
+else {
+  alert ('I\'m not sure!');
 }
 
-
-let english= prompt ('Do you speak English well?','yes,y,no,n')
-english = english.toLowerCase();
-if (english ==='yes'|| english ==='y'){
-  alert ('Good for you!')
+let ta= prompt ('Is it good to be a TA?','yes,no')
+ta = ta.toLowerCase();
+if (ta ==='yes'){
+  alert ('Good for you!');
+  console.log(ta+ ' You like being TA');
 }
 else{
-  alert('It\'s the first world language How about trying to learn it?')
+  alert('Sorry to know that ')
+  console.log(ta+ ' You don\'t like being TA');
 }
 
-let travel= prompt ('Have you ever traveled?', 'yes,y,no,n')
-travel = travel.toLowerCase();
-if (travel ==='yes'||travel==='y'){
-  alert ('Nice!')
+let github= prompt ('do you know my GitHub account?', 'yes,no')
+github = github.toLowerCase();
+if (github ==='no'){
+  alert ('My GitHub account shown in the navbar!')
 }
-else{
-  alert ('Wish you do soon!')
+else {
+  alert ('Great!')
 }
 
-let visit= prompt ('Would you visit the website again?', 'yes,y,no,n');
+let visit= prompt ('Would you visit the website again?', 'yes,no');
 visit = visit.toLowerCase();
 alert('Thanks for your time ' +userName);
 
-console.log(userAge, "Correct");
-console.log(mature, 'Correct');
-console.log(english, 'Correct');
-console.log(travel, 'Correct');
-console.log(visit, 'Correct');
+console.log(careerShift);
+console.log(github);
+console.log(visit);
