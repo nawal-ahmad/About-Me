@@ -24,6 +24,7 @@ header nav ul li {
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 45px;
+  font-size: larger;
 }
 header nav ul a:hover {
   background-color:#1687a7 ;

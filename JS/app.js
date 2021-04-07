@@ -82,7 +82,7 @@ for(i=0; i<4; i++){
     alert('Wow! You guessed it right!')
     score++;
     console.log(' Your score got = ' + score);
-    i=4;
+    break;
   }
   else if(parseInt(height)>170){
   alert ('too high!');
