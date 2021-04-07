@@ -46,7 +46,7 @@ else{
   console.log(ta+ ' You don\'t like being TA');
 }
 */
-
+ function qusThree(){
 let github= prompt ('do you know my GitHub account?', 'yes,no')
 github = github.toLowerCase();
 if ((github ==='no')||(github ==='n')){
@@ -58,6 +58,8 @@ else {
   score++;
   console.log(' Your score got = ' + score);
 }
+}
+qusThree();
 
 
 let car= prompt('Do I have a car?');
