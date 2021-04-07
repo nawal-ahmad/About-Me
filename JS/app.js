@@ -91,7 +91,7 @@ else {
 }
 qusFive();
 
-
+function qusSix(){
 var i=0;
 let height=null;
 for(i=0; i<4; i++){
@@ -117,6 +117,8 @@ for(i=0; i<4; i++){
   console.log(parseInt(height)); 
 }
 alert ('The correct answer is 167 cm!')
+}
+qusSix();
 
 
 let favCity = ['Rome','Paris','Madrid','Oslo'];
