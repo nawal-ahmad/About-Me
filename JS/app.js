@@ -4,6 +4,7 @@ let userName= prompt('What is your name?');
 
 let score=0;
 
+function qusOne(){
 let specialty= prompt('Do you know what is my specialty?');
 specialty = specialty.toLowerCase();
 if((specialty==='yes')||(specialty==='y')){
@@ -17,7 +18,10 @@ else {
   console.log(specialty+' You don\'t know what is my specialty');
   console.log(' Your score still = ' + score);
 }
+}
+ qusOne();
 
+function qusTwo(){
 let careerShift= prompt('Do you find the idea of making career shift from engineer to soft developer exciting?');
 careerShift = careerShift.toLowerCase();
 if((careerShift==='yes')||(careerShift==='y')){
@@ -29,7 +33,8 @@ else {
   alert ('Oh, I\'m not sure!');
   console.log(' Your score still = ' + score);
 }
-
+}
+qusTwo();
 /*let ta= prompt ('Is it good to be a TA?')
 ta = ta.toLowerCase();
 if (ta ==='yes'){
@@ -41,7 +46,7 @@ else{
   console.log(ta+ ' You don\'t like being TA');
 }
 */
-
+ function qusThree(){
 let github= prompt ('do you know my GitHub account?', 'yes,no')
 github = github.toLowerCase();
 if ((github ==='no')||(github ==='n')){
@@ -53,8 +58,10 @@ else {
   score++;
   console.log(' Your score got = ' + score);
 }
+}
+qusThree();
 
-
+function qusFour(){
 let car= prompt('Do I have a car?');
 car = car.toLowerCase();
 if((car==='yes')||(car==='y')){
@@ -66,7 +73,10 @@ else {
   score++;
   console.log(' Your score got = ' + score);
 }
+}
+qusFour();
 
+function qusFive(){
 let pet= prompt('Do I have a pet?');
 pet = pet.toLowerCase();
 if((pet==='yes')||(pet==='y')){
@@ -78,7 +88,10 @@ else {
   alert ('Wrong, I have a lovely cat!');
   console.log(' Your score still = ' + score);
 }
+}
+qusFive();
 
+function qusSix(){
 var i=0;
 let height=null;
 for(i=0; i<4; i++){
@@ -104,8 +117,11 @@ for(i=0; i<4; i++){
   console.log(parseInt(height)); 
 }
 alert ('The correct answer is 167 cm!')
+}
+qusSix();
 
 
+function qusSeven(){
 let favCity = ['Rome','Paris','Madrid','Oslo'];
 let favCityGuess = '';
 for (let j=0; j<6; j++) {
@@ -126,9 +142,10 @@ for (let j=0; j<6; j++) {
     // }
   }
 }
-  
-
 alert('The correct answer is one of these cities: ' + favCity[0] + ', ' + favCity[1] + ', ' + favCity[2] + ' and '+ favCity[3]);
+} 
+ qusSeven();
+
 alert('Your final score is ' + score +' out of 7');
 alert('Thanks for your time ' +userName);
 
