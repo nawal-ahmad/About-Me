@@ -61,7 +61,7 @@ else {
 }
 qusThree();
 
-
+function qusFour(){
 let car= prompt('Do I have a car?');
 car = car.toLowerCase();
 if((car==='yes')||(car==='y')){
@@ -73,6 +73,9 @@ else {
   score++;
   console.log(' Your score got = ' + score);
 }
+}
+qusFour();
+
 
 let pet= prompt('Do I have a pet?');
 pet = pet.toLowerCase();
