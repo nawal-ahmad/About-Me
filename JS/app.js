@@ -76,7 +76,7 @@ else {
 }
 qusFour();
 
-
+function qusFive(){
 let pet= prompt('Do I have a pet?');
 pet = pet.toLowerCase();
 if((pet==='yes')||(pet==='y')){
@@ -88,6 +88,9 @@ else {
   alert ('Wrong, I have a lovely cat!');
   console.log(' Your score still = ' + score);
 }
+}
+qusFive();
+
 
 var i=0;
 let height=null;
