@@ -19,10 +19,9 @@ else {
   console.log(' Your score still = ' + score);
 }
 }
-
  qusOne();
 
-
+function qusTwo(){
 let careerShift= prompt('Do you find the idea of making career shift from engineer to soft developer exciting?');
 careerShift = careerShift.toLowerCase();
 if((careerShift==='yes')||(careerShift==='y')){
@@ -34,7 +33,8 @@ else {
   alert ('Oh, I\'m not sure!');
   console.log(' Your score still = ' + score);
 }
-
+}
+qusTwo();
 /*let ta= prompt ('Is it good to be a TA?')
 ta = ta.toLowerCase();
 if (ta ==='yes'){
