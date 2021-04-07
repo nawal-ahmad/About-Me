@@ -104,25 +104,30 @@ for(i=0; i<4; i++){
   console.log(parseInt(height)); 
 }
 alert ('The correct answer is 167 cm!')
- 
-let favCity = ['Rome','Paris','Madrid','Oslo'];
 
+
+let favCity = ['Rome','Paris','Madrid','Oslo'];
 let favCityGuess = '';
-for (let i=0; i<6; i++) {
+for (let j=0; j<6; j++) {
   let favCityGuess=prompt('Guess one of the cities I would like to visit in Europe?','first letter should be capital');
-  if ((favCityGuess===favCity[0])||(favCityGuess===favCity[1])||(favCityGuess===favCity[2])||(favCityGuess===favCity[3])) {
-    alert('That\'s correct!');
-    score++;
-    console.log(' Your score got = ' + score);
-    console.log(favCityGuess);
-    break;
-  }
-  else{
-   alert('Try again!');
-   console.log(favCityGuess);
-   console.log(' Your score still = ' + score);
+  for (let i= 0;i<favCity.length;i++)  {
+    if(favCityGuess===favCity[i]){
+      alert('That\'s correct!');
+      score++;
+      console.log(' Your score got = ' + score);
+      console.log(favCityGuess);
+      j=22; 
+      break;
+    }
+    // else{ 
+    //   alert('Try again!');
+    //   console.log(favCityGuess);
+    //   console.log(' Your score still = ' + score);  
+    // }
   }
 }
+  
+
 alert('The correct answer is one of these cities: ' + favCity[0] + ', ' + favCity[1] + ', ' + favCity[2] + ' and '+ favCity[3]);
 alert('Your final score is ' + score +' out of 7');
 alert('Thanks for your time ' +userName);
