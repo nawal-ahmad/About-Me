@@ -4,6 +4,7 @@ let userName= prompt('What is your name?');
 
 let score=0;
 
+function qusOne(){
 let specialty= prompt('Do you know what is my specialty?');
 specialty = specialty.toLowerCase();
 if((specialty==='yes')||(specialty==='y')){
@@ -17,6 +18,10 @@ else {
   console.log(specialty+' You don\'t know what is my specialty');
   console.log(' Your score still = ' + score);
 }
+}
+
+ qusOne();
+
 
 let careerShift= prompt('Do you find the idea of making career shift from engineer to soft developer exciting?');
 careerShift = careerShift.toLowerCase();
