@@ -142,10 +142,10 @@ for (let j=0; j<6; j++) {
     // }
   }
 }
+alert('The correct answer is one of these cities: ' + favCity[0] + ', ' + favCity[1] + ', ' + favCity[2] + ' and '+ favCity[3]);
 } 
  qusSeven();
 
-alert('The correct answer is one of these cities: ' + favCity[0] + ', ' + favCity[1] + ', ' + favCity[2] + ' and '+ favCity[3]);
 alert('Your final score is ' + score +' out of 7');
 alert('Thanks for your time ' +userName);
 
