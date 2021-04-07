@@ -121,6 +121,7 @@ alert ('The correct answer is 167 cm!')
 qusSix();
 
 
+function qusSeven(){
 let favCity = ['Rome','Paris','Madrid','Oslo'];
 let favCityGuess = '';
 for (let j=0; j<6; j++) {
@@ -141,7 +142,8 @@ for (let j=0; j<6; j++) {
     // }
   }
 }
-  
+} 
+ qusSeven();
 
 alert('The correct answer is one of these cities: ' + favCity[0] + ', ' + favCity[1] + ', ' + favCity[2] + ' and '+ favCity[3]);
 alert('Your final score is ' + score +' out of 7');
