@@ -15,6 +15,7 @@ if((specialty==='yes')||(specialty==='y')){
 else {
   alert ('I\'m biomedical engineer!');
   console.log(specialty+' You don\'t know what is my specialty');
+  console.log(' Your score still = ' + score);
 }
 
 let careerShift= prompt('Do you find the idea of making career shift from engineer to soft developer exciting?');
@@ -26,6 +27,7 @@ if((careerShift==='yes')||(careerShift==='y')){
 }
 else {
   alert ('Oh, I\'m not sure!');
+  console.log(' Your score still = ' + score);
 }
 
 /*let ta= prompt ('Is it good to be a TA?')
@@ -44,12 +46,12 @@ let github= prompt ('do you know my GitHub account?', 'yes,no')
 github = github.toLowerCase();
 if ((github ==='no')||(github ==='n')){
   alert ('You can find it shown in the navbar!')
+  console.log(' Your score still = ' + score);
 }
 else {
   alert ('Great!')
   score++;
   console.log(' Your score got = ' + score);
-
 }
 
 
@@ -57,6 +59,7 @@ let car= prompt('Do I have a car?');
 car = car.toLowerCase();
 if((car==='yes')||(car==='y')){
   alert ('Unfortunately I don\'t have a car!');
+  console.log(' Your score still = ' + score);
 }
 else {
   alert ('Right I don\'t have a car :\(');
@@ -73,9 +76,11 @@ if((pet==='yes')||(pet==='y')){
 }
 else {
   alert ('Wrong, I have a lovely cat!');
+  console.log(' Your score still = ' + score);
 }
 
 var i=0;
+let height=null;
 for(i=0; i<4; i++){
   let height=prompt('guess what is my height (cm)?','150-180');
   if (parseInt(height)===167) {
@@ -86,12 +91,15 @@ for(i=0; i<4; i++){
   }
   else if(parseInt(height)>170){
   alert ('too high!');
+  console.log(' Your score still = ' + score);
   }
   else if(parseInt(height)<160){
   alert('too low!');
+  console.log(' Your score still = ' + score);
   }
   else {
   alert('Your guess is close to the correct hight!')
+  console.log(' Your score still = ' + score);
   }
   console.log(parseInt(height)); 
 }
@@ -99,6 +107,7 @@ alert ('The correct answer is 167 cm!')
  
 let favCity = ['Rome','Paris','Madrid','Oslo'];
 
+let favCityGuess = '';
 for (let i=0; i<6; i++) {
   let favCityGuess=prompt('Guess one of the cities I would like to visit in Europe?','first letter should be capital');
   if ((favCityGuess===favCity[0])||(favCityGuess===favCity[1])||(favCityGuess===favCity[2])||(favCityGuess===favCity[3])) {
@@ -111,6 +120,7 @@ for (let i=0; i<6; i++) {
   else{
    alert('Try again!');
    console.log(favCityGuess);
+   console.log(' Your score still = ' + score);
   }
 }
 alert('The correct answer is one of these cities: ' + favCity[0] + ', ' + favCity[1] + ', ' + favCity[2] + ' and '+ favCity[3]);
