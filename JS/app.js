@@ -36,18 +36,6 @@ function qusTwo(){
 }
 qusTwo();
 
-/*let ta= prompt ('Is it good to be a TA?')
-ta = ta.toLowerCase();
-if (ta ==='yes'){
-  alert ('Good for you!');
-  console.log(ta+ ' You like being TA');
-}
-else{
-  alert('Sorry to know that ')
-  console.log(ta+ ' You don\'t like being TA');
-}
-*/
-
 function qusThree(){
   let github= prompt ('do you know my GitHub account?', 'yes,no');
   github = github.toLowerCase();
@@ -122,7 +110,6 @@ function qusSix(){
 }
 qusSix();
 
-
 function qusSeven(){
   let favCity = ['Rome','Paris','Madrid','Oslo'];
   let favCityGuess = '';
@@ -137,11 +124,6 @@ function qusSeven(){
         j=22;
         break;
       }
-    // else{
-    //   alert('Try again!');
-    //   console.log(favCityGuess);
-    //   console.log(' Your score still = ' + score);
-    // }
     }
   }
   alert('The correct answer is one of these cities: ' + favCity[0] + ', ' + favCity[1] + ', ' + favCity[2] + ' and '+ favCity[3]);
@@ -150,7 +132,4 @@ qusSeven();
 
 alert('Your final score is ' + score +' out of 7');
 alert('Thanks for your time ' +userName);
-
-/*let visit= prompt ('Would you visit this website again?');
-visit = visit.toLowerCase();*/
 
